@@ -6,24 +6,31 @@ import java.util.Set;
 public class LengthOfLongestSubstring {
 
     public static int lengthOfLongestSubstring(String s) {
-        int n = s.length();
-        int maxLength = 0;
-        Set<Character> charSet = new HashSet<>();
-        int left = 0;
+        String test = "";
+        // result
+        int maxLength = -1;
 
-        for (int right = 0; right < n; right++) {
-            if (!charSet.contains(s.charAt(right))) {
-                charSet.add(s.charAt(right));
-                maxLength = Math.max(maxLength, right - left + 1);
-            } else {
-                while (charSet.contains(s.charAt(right))) {
-                    charSet.remove(s.charAt(left));
-                    left++;
-                }
-                charSet.add(s.charAt(right));
-            }
+        // Return zero if string is empty
+        if (s.isEmpty()) {
+            return 0;
         }
 
+        // Return 1 if string length is one
+        else if (s.length() == 1) {
+            return 1;
+        }
+
+        for (char c : s.toCharArray()) {
+            String current = String.valueOf(c);
+
+            // if string already contains the charcter
+            // then get substring after repeating character
+            if (test.contains(current)) {
+                test = test.substring(test.indexOf(current) + 1);
+            }
+            test = test + c;
+            maxLength = Math.max(test.length(), maxLength);
+        }
         return maxLength;
     }
 }
