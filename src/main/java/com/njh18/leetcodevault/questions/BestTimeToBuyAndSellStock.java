@@ -1,4 +1,4 @@
-package com.njh18.leetcodevault;
+package com.njh18.leetcodevault.questions;
 
 // https://leetcode.com/problems/best-time-to-buy-and-sell-stock/
 public class BestTimeToBuyAndSellStock {

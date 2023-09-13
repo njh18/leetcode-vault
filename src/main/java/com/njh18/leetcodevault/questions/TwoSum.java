@@ -1,4 +1,4 @@
-package com.njh18.leetcodevault;
+package com.njh18.leetcodevault.questions;
 
 import java.util.HashMap;
 import java.util.Map;

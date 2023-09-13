@@ -1,4 +1,4 @@
-package com.njh18.leetcodevault;
+package com.njh18.leetcodevault.questions;
 
 import java.util.HashSet;
 import java.util.Set;
