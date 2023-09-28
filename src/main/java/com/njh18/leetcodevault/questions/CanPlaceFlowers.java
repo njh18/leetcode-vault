@@ -15,26 +15,19 @@ public class CanPlaceFlowers {
         if (flowerbed.length == 1) {
             return flowerbed[0] == 0;
         }
-
-        boolean previousEmpty = flowerbed[0] == 0;
         for (int i = 0; i < flowerbed.length; i++) {
             if (flowerbed[i] == 0) {
-                if (previousEmpty && (i == flowerbed.length - 1 || flowerbed[i+1] == 0)) {
+                boolean emptyLeftPlot = i == 0 || flowerbed[i-1] == 0;
+                boolean emptyRightPlot = i == flowerbed.length -1 || flowerbed[i+1] == 0;
+                if (emptyLeftPlot && emptyRightPlot) {
                     flowerbed[i] = 1;
                     n--;
-                    previousEmpty = false;
-                } else {
-                    previousEmpty = true;
+                    if (n == 0) {
+                        return true;
+                    }
                 }
-            } else {
-                previousEmpty = false;
-            }
-
-            if (n == 0) {
-                return true;
             }
         }
-
         return false;
     }
 }
