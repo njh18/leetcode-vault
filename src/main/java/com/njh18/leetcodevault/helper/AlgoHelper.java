@@ -1,4 +1,4 @@
-package com.njh18.leetcodvault.helper;
+package com.njh18.leetcodevault.helper;
 
 public class AlgoHelper {
 

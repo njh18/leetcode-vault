@@ -1,23 +1,12 @@
 package com.njh18.leetcodevault.questions;
 
+import com.njh18.leetcodevault.model.ListNode;
+
 // https://leetcode.com/problems/merge-two-sorted-lists/
 public class MergeTwoSortedLists {
 
     public static void main(String[] args) {
 
-    }
-    public class ListNode {
-        int val;
-        ListNode next;
-        ListNode() {
-        }
-        ListNode(int val) {
-            this.val = val;
-        }
-        ListNode(int val, ListNode next) {
-            this.val = val;
-            this.next = next;
-        }
     }
 
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
