@@ -10,6 +10,9 @@ A string `a` is **lexicographically smaller** than a string `b` if in the first 
 
 If the first `min(a.length, b.length)` characters do not differ, then the shorter string is the lexicographically smaller one.
 
+### Height-Balanced
+
+A **height-balanced** binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.
 
 ## Interesting Knowledge
 
@@ -23,3 +26,5 @@ If the first `min(a.length, b.length)` characters do not differ, then the shorte
 ### Euclidean Algorithm
 
 - TODO: find a good explanation
+
+### Tortoise and Hare Algorithm
