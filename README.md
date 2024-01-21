@@ -14,6 +14,10 @@ If the first `min(a.length, b.length)` characters do not differ, then the shorte
 
 A **height-balanced** binary tree is a binary tree in which the depth of the two subtrees of every node never differs by more than one.
 
+### Monotonic Stack
+
+It means that the values in the stack are either increasing/decreasing/equal in order.
+
 ## Interesting Knowledge
 
 ### Greatest Common Divisor of Strings
