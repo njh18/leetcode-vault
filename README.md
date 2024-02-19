@@ -32,3 +32,9 @@ It means that the values in the stack are either increasing/decreasing/equal in 
 - TODO: find a good explanation
 
 ### Tortoise and Hare Algorithm
+
+## Useful Functions in Java
+
+### Create a sublist from an int array
+
+https://www.geeksforgeeks.org/java-util-arrays-copyofrange-java/
